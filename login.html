@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <section>
+        <div class="flex flex-col justify-center items-center bg-zinc-950 h-max min-h-[100vh] pb-5">
+          <div class="mx-auto flex w-full flex-col justify-center px-5 pt-0 md:max-w-[50%] lg:max-w-[50%] lg:px-6">
+            <div class="my-auto w-[350px] max-w-[450px] mx-auto">
+              <p class="text-[32px] font-bold text-white">Sign In</p>
+              <p class="mb-2.5 mt-2.5 font-normal text-zinc-400">Enter your email and password to sign in!</p>
+              
+              <form  class="mb-4">
+                <div class="grid gap-4">
+                  <!-- Email Field -->
+                  <div class="flex flex-col">
+                    <label class="text-white" for="email">Email</label>
+                    <input
+                      id="email"
+                      placeholder="name@example.com"
+                      type="email"
+                      class="input-field"
+                      name="email"
+                    />
+                    <p class="error-message text-red-500 text-xs mt-1 hidden"></p>
+                  </div>
+      
+                  <!-- Password Field -->
+                  <div class="flex flex-col">
+                    <label class="text-white" for="password">Password</label>
+                    <input
+                      id="password"
+                      placeholder="Password"
+                      type="password"
+                      class="input-field"
+                      name="password"
+                    />
+                    <p class="error-message text-red-500 text-xs mt-1 hidden"></p>
+                  </div>
+      
+                  <!-- Submit Button -->
+                   <a href="./Index.html">
+                        <button
+                            class="bg-white text-zinc-950 hover:bg-white/90 flex w-full mt-4 items-center justify-center rounded-lg px-4 py-3 text-base font-medium"
+                            type="button"
+                        >
+                            Sign in
+                        </button>
+                    </a>
+                </div>
+              </form>
+      
+              <!-- Additional Links -->
+              <p><a href="/forgot_password" class="font-medium text-white text-sm">Forgot your password?</a></p>
+              <p><a href="/signup" class="font-medium text-white text-sm">Don't have an account? Sign up</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const form = document.getElementById("loginForm");
+          const emailInput = document.getElementById("email");
+          const passwordInput = document.getElementById("password");
+          const errorMessages = document.querySelectorAll(".error-message");
+      
+          form.addEventListener("submit", function (event) {
+            let isValid = true;
+      
+            // Reset error messages
+            errorMessages.forEach((msg) => {
+              msg.textContent = "";
+              msg.classList.add("hidden");
+            });
+      
+            if (!emailInput.value.trim()) {
+              showError(emailInput, "Email is required.");
+              isValid = false;
+            } else if (!isValidEmail(emailInput.value.trim())) {
+              showError(emailInput, "Please enter a valid email.");
+              isValid = false;
+            }
+      
+            if (!passwordInput.value.trim()) {
+              showError(passwordInput, "Password is required.");
+              isValid = false;
+            }
+      
+            if (!isValid) {
+              event.preventDefault(); // Prevent form submission if validation fails
+            }
+          });
+      
+          function showError(input, message) {
+            const errorText = input.nextElementSibling;
+            errorText.textContent = message;
+            errorText.classList.remove("hidden");
+          }
+      
+          function isValidEmail(email) {
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailPattern.test(email);
+          }
+        });
+      </script>
+      
+      <style>
+        .input-field {
+          background-color: #0d0d0d;
+          color: white;
+          border: 1px solid #333;
+          border-radius: 6px;
+          padding: 12px;
+          font-size: 14px;
+          outline: none;
+          width: 100%;
+        }
+        .input-field:focus {
+          border-color: #3b82f6;
+        }
+      </style>
+      
+</body>
+</html>

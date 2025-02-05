@@ -1,0 +1,394 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main>
+        <section class="sticky top-0 z-50">
+            <div class="">
+              <!-- Header -->
+              <header class="bg-gradient-to-r from-green-500 to-teal-500 shadow-md">
+                <nav class="flex justify-between items-center max-w-7xl mx-auto p-4 text-white">
+                  <!-- Logo -->
+                  <a href="#" class="text-2xl font-bold tracking-wide">EcoCycle</a>
+          
+                  <!-- Desktop Menu -->
+                  <div class="hidden md:flex space-x-6">
+                    <a href="#" class="hover:text-gray-200 transition">Home</a>
+                    <a href="#" class="hover:text-gray-200 transition">Services</a>
+                    <a href="#" class="hover:text-gray-200 transition">About</a>
+                    <a href="#" class="hover:text-gray-200 transition">Contact</a>
+                  </div>
+          
+                  <!-- Login Button -->
+                  <a href="./login.html" class="hidden md:inline-block bg-white text-purple-500 font-semibold px-4 py-2 rounded-lg shadow-md hover:bg-gray-200">
+                    Login
+                  </a>
+          
+                  <!-- Mobile Menu Button -->
+                  <button id="mobile-menu-btn" class="md:hidden focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                  </button>
+                </nav>
+          
+                <!-- Mobile Dropdown Menu -->
+                <div id="mobile-menu" class="hidden bg-purple-600 text-white md:hidden">
+                  <a href="#" class="block py-3 px-6 border-b border-purple-400">Home</a>
+                  <a href="#" class="block py-3 px-6 border-b border-purple-400">Services</a>
+                  <a href="#" class="block py-3 px-6 border-b border-purple-400">About</a>
+                  <a href="#" class="block py-3 px-6 border-b border-purple-400">Contact</a>
+                  <a href="./login.html" class="block py-3 px-6 bg-white text-purple-600 font-bold">Login</a>
+                </div>
+              </header>
+          
+              <!-- Main Content -->
+              
+          
+              <!-- Mobile Bottom Navigation -->
+              <div class="fixed bottom-0 w-full bg-gray-800 md:hidden">
+                <nav class="flex justify-around py-3 text-white text-sm">
+                  <a href="#" class="flex flex-col items-center">
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M10 2l-8 8h3v6h10v-6h3l-8-8z"></path>
+                    </svg>
+                    <span>Home</span>
+                  </a>
+                  <a href="#" class="flex flex-col items-center">
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M4 8V6a6 6 0 0112 0v2a2 2 0 012 2v4h-2V8a4 4 0 00-8 0v6H4V10a2 2 0 012-2z"></path>
+                      </svg>
+                    <span>Services</span>
+                  </a>
+                  <a href="#" class="flex flex-col items-center">
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M10 3a5 5 0 00-5 5v1H4a3 3 0 100 6h12a3 3 0 100-6h-1V8a5 5 0 00-5-5z"></path>
+                    </svg>
+                    <span>About</span>
+                  </a>
+                  <a href="#" class="flex flex-col items-center">
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M14 8a4 4 0 10-8 0v7h8V8zM8 2a6 6 0 00-6 6v6l-3 2v1h18v-1l-3-2V8a6 6 0 00-6-6z"></path>
+                    </svg>
+                    <span>Contact</span>
+                  </a>
+                </nav>
+              </div>
+            </div>
+          </section>
+          
+
+<!-- home part -->
+<main class="flex justify-center items-center h-[80vh]">
+    <section class="h-screen  flex content-center pl-16 text-gray-900 bg-cover bg-[url(school.jpg)]  bg-no-repeat  ">
+        <div class="flex w-1/2 flex-col justify-center ">
+            <h1 class="text-3xl font-bold">Welcome to EcoCycle</h1>
+            <p class="mt-2 font-semibold text-1xl">EcoCycle is your go-to app for easy recycling. We connect you with local recycling centers, making it simple to recycle and help the environment. Join us today and be part of the change!</p>
+            <div class="mt-8 flex items-center gap-4">
+                <a href="./Login.html">
+                    <button class="hover:border-2 flex items-center justify-center hover:border-red-500 text-white hover:text-red-500 rounded-lg bg-red-500 p-2 hover:bg-transparent hover:shadow-lg hover:shadow-red-500/50">
+                        Get started
+                    </button>
+                </a>
+                
+               
+
+
+
+            </div>
+        </div>
+       
+    
+    </section>
+  </main>
+
+  <section>
+    <section class="bg-green-300 py-16">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">About Us</h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                We are a dedicated team committed to bridging the gap between industries and recycling centers. Our mission is to create a sustainable future by helping businesses efficiently recycle their waste, reduce environmental impact, and contribute to a greener planet.
+            </p>
+            <div class="mt-12 grid md:grid-cols-3 gap-8">
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <h3 class="text-2xl font-semibold text-gray-800">Our Vision</h3>
+                    <p class="text-gray-600 mt-2">To revolutionize industrial waste management through seamless recycling solutions.</p>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <h3 class="text-2xl font-semibold text-gray-800">Our Mission</h3>
+                    <p class="text-gray-600 mt-2">Connecting businesses with recycling centers to promote sustainability and responsible waste disposal.</p>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <h3 class="text-2xl font-semibold text-gray-800">Our Team</h3>
+                    <p class="text-gray-600 mt-2">A passionate group of professionals dedicated to making recycling easier and more accessible for industries.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</section>
+
+<section>
+    <section class="bg-gray-100 py-16">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">Services We Offer</h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                We provide tailored recycling solutions to help industries manage waste efficiently and sustainably.
+            </p>
+            <div class="mt-12 grid md:grid-cols-3 gap-8">
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <h3 class="text-2xl font-semibold text-gray-800">Industrial Waste Collection</h3>
+                    <p class="text-gray-600 mt-2">We collect and transport industrial waste to certified recycling centers.</p>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <h3 class="text-2xl font-semibold text-gray-800">Recycling Consultation</h3>
+                    <p class="text-gray-600 mt-2">Expert guidance on waste reduction and sustainable disposal practices.</p>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <h3 class="text-2xl font-semibold text-gray-800">Eco-Friendly Processing</h3>
+                    <p class="text-gray-600 mt-2">We ensure responsible recycling and disposal with minimal environmental impact.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="max-w-6xl mx-auto pt-10 pb-36 px-8">
+
+      <div class="max-w-md mx-auto mb-14 text-center">
+        <h1 class="text-4xl font-semibold mb-6 lg:text-5xl"><span class="text-indigo-600">Flexible</span> Plans</h1>
+        <p class="text-xl text-gray-500 font-medium">Choose a plan that works best for you and your team.</p>
+      </div>
+      
+      <div class="flex flex-col justify-between items-center lg:flex-row lg:items-start">
+        
+        <div class="w-full flex-1 mt-8 p-8 order-2 bg-white shadow-xl rounded-3xl sm:w-96 lg:w-full lg:order-1 lg:rounded-r-none">
+          <div class="mb-7 pb-7 flex items-center border-b border-gray-300">
+            <img src="https://res.cloudinary.com/williamsondesign/abstract-1.jpg"  alt="" class="rounded-3xl w-20 h-20" />
+            <div class="ml-5">
+              <span class="block text-2xl font-semibold">Basic</span>
+              <span><span class="font-medium text-gray-500 text-xl align-top">$&thinsp;</span><span class="text-3xl font-bold">10 </span></span><span class="text-gray-500 font-medium">/ user</span>
+            </div>
+          </div>
+          <ul class="mb-7 font-medium text-gray-500">
+            <li class="flex text-lg mb-2">
+              <img src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
+              <span class="ml-3">Get started with <span class="text-black">messaging</span></span>
+            </li>
+            <li class="flex text-lg mb-2">
+              <img src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
+              <span class="ml-3">Flexible <span class="text-black">team meetings</span></span>
+            </li>
+            <li class="flex text-lg">
+              <img src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
+              <span class="ml-3"><span class="text-black">5 TB</span> cloud storage</span>
+            </li>
+          </ul>
+          <a href="#/" class="flex justify-center items-center bg-indigo-600 rounded-xl py-5 px-4 text-center text-white text-xl">
+            Choose Plan
+            <img src="https://res.cloudinary.com/williamsondesign/arrow-right.svg" class="ml-2" />
+          </a>
+        </div>
+        
+        <div class="w-full flex-1 p-8 order-1 shadow-xl rounded-3xl bg-gray-900 text-gray-400 sm:w-96 lg:w-full lg:order-2 lg:mt-0">
+          <div class="mb-8 pb-8 flex items-center border-b border-gray-600">
+            <img src="https://res.cloudinary.com/williamsondesign/abstract-2.jpg"  alt="" class="rounded-3xl w-20 h-20" />
+            <div class="ml-5">
+              <span class="block text-3xl font-semibold text-white">Startup</span>
+              <span><span class="font-medium text-xl align-top">$&thinsp;</span><span class="text-3xl font-bold text-white">24 </span></span><span class="font-medium">/ user</span>
+            </div>
+          </div>
+          <ul class="mb-10 font-medium text-xl">
+            <li class="flex mb-6">
+              <img src="https://res.cloudinary.com/williamsondesign/check-white.svg" />
+              <span class="ml-3">All features in <span class="text-white">Basic</span></span>
+            </li>
+            <li class="flex mb-6">
+              <img src="https://res.cloudinary.com/williamsondesign/check-white.svg" />
+              <span class="ml-3">Flexible <span class="text-white">call scheduling</span></span>
+            </li>
+            <li class="flex">
+              <img src="https://res.cloudinary.com/williamsondesign/check-white.svg" />
+              <span class="ml-3"><span class="text-white">15 TB</span> cloud storage</span>
+            </li>
+          </ul>
+          <a href="#/" class="flex justify-center items-center bg-indigo-600 rounded-xl py-6 px-4 text-center text-white text-2xl">
+            Choose Plan
+            <img src="https://res.cloudinary.com/williamsondesign/arrow-right.svg" class="ml-2" />
+          </a>
+        </div>
+        
+        <div class="w-full flex-1 mt-8 p-8 order-3 bg-white shadow-xl rounded-3xl sm:w-96 lg:w-full lg:order-3 lg:rounded-l-none">
+          <div class="mb-7 pb-7 flex items-center border-b border-gray-300">
+            <img src="https://res.cloudinary.com/williamsondesign/abstract-3.jpg"  alt="" class="rounded-3xl w-20 h-20" />
+            <div class="ml-5">
+              <span class="block text-2xl font-semibold">Enterprise</span>
+              <span><span class="font-medium text-gray-500 text-xl align-top">$&thinsp;</span><span class="text-3xl font-bold">35 </span></span><span class="text-gray-500 font-medium">/ user</span>
+            </div>
+          </div>
+          <ul class="mb-7 font-medium text-gray-500">
+            <li class="flex text-lg mb-2">
+              <img src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
+              <span class="ml-3">All features in <span class="text-black">Startup</span></span>
+            </li>
+            <li class="flex text-lg mb-2">
+              <img src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
+              <span class="ml-3">Growth <span class="text-black">oriented</span></span>
+            </li>
+            <li class="flex text-lg">
+              <img src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
+              <span class="ml-3"><span class="text-black">Unlimited</span> cloud storage</span>
+            </li>
+          </ul>
+          <a href="#/" class="flex justify-center items-center bg-indigo-600 rounded-xl py-5 px-4 text-center text-white text-xl">
+            Choose Plan
+            <img src="https://res.cloudinary.com/williamsondesign/arrow-right.svg" class="ml-2" />
+          </a>
+        </div>
+        
+      </div>
+      
+  </section>     
+</section>
+
+<section>
+  <!-- component -->
+<div class="flex items-end w-full  bg-white">
+
+<footer class="w-full text-gray-700 bg-gray-100 body-font">
+  <div
+      class="container flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
+      <div class="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
+          <a class=" font-medium text-gray-900 title-font md:justify-start">
+              <svg class="w-auto h-5 text-gray-900 fill-current" viewBox="0 0 202 69"
+                  xmlns="http://www.w3.org/2000/svg">
+                 </svg>
+                 <h1>EcoCycle</h1>
+          </a>
+          <p class="mt-2 text-sm text-gray-500">Design, Code and Ship!</p>
+          <div class="mt-4">
+              <span class="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
+                  <a class="text-gray-500 cursor-pointer hover:text-gray-700">
+                      <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          class="w-5 h-5" viewBox="0 0 24 24">
+                          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      </svg>
+                  </a>
+                  <a class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
+                      <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          class="w-5 h-5" viewBox="0 0 24 24">
+                          <path
+                              d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                          </path>
+                      </svg>
+                  </a>
+                  <a class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                          stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                      </svg>
+                  </a>
+                  <a class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
+                      <svg fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                          stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                          <path stroke="none"
+                              d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                          </path>
+                          <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                      </svg>
+                  </a>
+              </span>
+          </div>
+      </div>
+      <div class="flex flex-wrap flex-grow mt-10 -mb-10 text-center md:pl-20 md:mt-0 md:text-left">
+          <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+              <h2 class="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">About</h2>
+              <nav class="mb-10 list-none">
+                  <li class="mt-3">
+                      <a class="text-gray-500 cursor-pointer hover:text-gray-900">Company</a>
+                  </li>
+                  <li class="mt-3">
+                      <a class="text-gray-500 cursor-pointer hover:text-gray-900">Careers</a>
+                  </li>
+                  <li class="mt-3">
+                      <a class="text-gray-500 cursor-pointer hover:text-gray-900">Blog</a>
+                  </li>
+              </nav>
+          </div>
+          <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+              <h2 class="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">Support</h2>
+              <nav class="mb-10 list-none">
+                  <li class="mt-3">
+                      <a class="text-gray-500 cursor-pointer hover:text-gray-900">Contact Support</a>
+                  </li>
+                  <li class="mt-3">
+                      <a class="text-gray-500 cursor-pointer hover:text-gray-900">Help Resources</a>
+                  </li>
+                  <li class="mt-3">
+                      <a class="text-gray-500 cursor-pointer hover:text-gray-900">Release Updates</a>
+                  </li>
+              </nav>
+          </div>
+          <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+              <h2 class="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">Platform
+              </h2>
+              <nav class="mb-10 list-none">
+                  <li class="mt-3">
+                      <a class="text-gray-500 cursor-pointer hover:text-gray-900">Terms &amp; Privacy</a>
+                  </li>
+                  <li class="mt-3">
+                      <a class="text-gray-500 cursor-pointer hover:text-gray-900">Pricing</a>
+                  </li>
+                  <li class="mt-3">
+                      <a class="text-gray-500 cursor-pointer hover:text-gray-900">FAQ</a>
+                  </li>
+              </nav>
+          </div>
+          <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+              <h2 class="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">Contact</h2>
+              <nav class="mb-10 list-none">
+                  <li class="mt-3">
+                      <a class="text-gray-500 cursor-pointer hover:text-gray-900">Send a Message</a>
+                  </li>
+                  <li class="mt-3">
+                      <a class="text-gray-500 cursor-pointer hover:text-gray-900">Request a Quote</a>
+                  </li>
+                  <li class="mt-3">
+                      <a class="text-gray-500 cursor-pointer hover:text-gray-900">+123-456-7890</a>
+                  </li>
+              </nav>
+          </div>
+      </div>
+  </div>
+  <div class="bg-gray-300">
+      <div class="container px-5 py-4 mx-auto">
+          <p class="text-sm text-gray-700 capitalize xl:text-center">© 2020 All rights reserved </p>
+          <p class="text-xl">Rayechos</p>
+      </div>
+  </div>
+</footer>
+
+</div>
+</section>
+</body>
+
+          <script>
+            document.addEventListener("DOMContentLoaded", () => {
+              const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+              const mobileMenu = document.getElementById("mobile-menu");
+          
+              mobileMenuBtn.addEventListener("click", () => {
+                mobileMenu.classList.toggle("hidden");
+              });
+            });
+          </script>
+          
+    </main>
+</body>
+</html>
